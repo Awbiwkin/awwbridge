@@ -1,0 +1,10 @@
+Package: com.wifibridge.diagnostics
+Name: WiFiBridge Diagnostics
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Description: Read-only network diagnostics for WiFiBridge development.
+Maintainer: WiFiBridge Project
+Author: WiFiBridge Project
+Section: Utilities
+Priority: optional
+Depends: firmware (>= 15.0)
