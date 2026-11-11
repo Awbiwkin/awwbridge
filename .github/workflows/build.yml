@@ -1,0 +1,27 @@
+
+name: Build WiFiBridge Diagnostics
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Theos
+        uses: beerpiss/theos-action@v1
+
+      - name: Build rootless package
+        run: make clean package
+
+      - name: Upload Debian package
+        uses: actions/upload-artifact@v4
+        with:
+          name: WiFiBridge-Diagnostics-0.1.0
+          path: packages/*.deb
+          if-no-files-found: error
