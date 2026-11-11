@@ -1,0 +1,10 @@
+Package: com.wifibridge.proxy
+Name: WiFiBridge Proxy
+Version: 0.2.0
+Architecture: iphoneos-arm64
+Description: HTTP CONNECT and SOCKS5 proxy for sharing an iPhone Wi-Fi connection with hotspot clients.
+Maintainer: WiFiBridge Project
+Author: WiFiBridge Project
+Section: Networking
+Priority: optional
+Depends: firmware (>= 15.0)
